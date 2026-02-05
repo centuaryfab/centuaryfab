@@ -1,86 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keerthik Kalyan | Personal Site</title>
-
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            height:100vh;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            color:white;
-        }
-
-        .card{
-            background: rgba(255,255,255,0.1);
-            padding:40px;
-            border-radius:20px;
-            text-align:center;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            max-width:500px;
-        }
-
-        h1{
-            margin-bottom:10px;
-            font-size:40px;
-        }
-
-        h3{
-            margin-top:0;
-            font-weight:normal;
-            color:#dcdcdc;
-        }
-
-        p{
-            line-height:1.6;
-            font-size:18px;
-        }
-
-        .btn{
-            display:inline-block;
-            margin-top:20px;
-            padding:12px 25px;
-            border-radius:30px;
-            background:white;
-            color:#1e3c72;
-            text-decoration:none;
-            font-weight:bold;
-            transition:0.3s;
-        }
-
-        .btn:hover{
-            background:#ffd700;
-            color:black;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>RBI Rate of Interest Dec 2025</title>
+  <style>
+    .rate-box {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      padding: 20px;
+      margin: 30px auto;
+      border-radius: 8px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+    }
+    .rate-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .rate-value {
+      font-size: 48px;
+      color: #007bff;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
 </head>
-
 <body>
 
-    <div class="card">
-        <h1>Keerthik Kalyan</h1>
-        <h3>Entrepreneur | Visionary | Lifelong Learner</h3>
+<div class="rate-box">
+  <div class="rate-title">RBI Repo Rate (Dec 2025)</div>
+  <div id="repoRate" class="rate-value">Loading...</div>
+</div>
 
-        <p>
-            Hello! I'm Keerthik — a passionate and driven individual who believes in growth,
-            discipline, and creating meaningful success.  
-            I enjoy building businesses, exploring new opportunities, and constantly
-            improving myself both personally and professionally.
-        </p>
-
-        <p>
-            My mindset is simple: stay focused, work hard, and never stop learning.
-        </p>
-
-        <a href="#" class="btn">Contact Me</a>
-    </div>
+<script>
+  // Rate of interest from RBI December 2025
+  const rbiRate = "5.25%"; // repo rate
+  document.getElementById("repoRate").innerText = rbiRate;
+</script>
 
 </body>
 </html>
